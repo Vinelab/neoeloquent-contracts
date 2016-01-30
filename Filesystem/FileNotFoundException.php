@@ -1,10 +1,9 @@
 <?php
 
-namespace Illuminate\Contracts\Filesystem;
+namespace Vinelab\NeoEloquent\Contracts\Filesystem;
 
 use Exception;
 
 class FileNotFoundException extends Exception
 {
-    //
 }

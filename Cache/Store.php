@@ -1,13 +1,14 @@
 <?php
 
-namespace Illuminate\Contracts\Cache;
+namespace Vinelab\NeoEloquent\Contracts\Cache;
 
 interface Store
 {
     /**
      * Retrieve an item from the cache by key.
      *
-     * @param  string  $key
+     * @param string $key
+     *
      * @return mixed
      */
     public function get($key);
@@ -15,18 +16,18 @@ interface Store
     /**
      * Store an item in the cache for a given number of minutes.
      *
-     * @param  string  $key
-     * @param  mixed   $value
-     * @param  int     $minutes
-     * @return void
+     * @param string $key
+     * @param mixed  $value
+     * @param int    $minutes
      */
     public function put($key, $value, $minutes);
 
     /**
      * Increment the value of an item in the cache.
      *
-     * @param  string  $key
-     * @param  mixed   $value
+     * @param string $key
+     * @param mixed  $value
+     *
      * @return int|bool
      */
     public function increment($key, $value = 1);
@@ -34,8 +35,9 @@ interface Store
     /**
      * Decrement the value of an item in the cache.
      *
-     * @param  string  $key
-     * @param  mixed   $value
+     * @param string $key
+     * @param mixed  $value
+     *
      * @return int|bool
      */
     public function decrement($key, $value = 1);
@@ -43,24 +45,22 @@ interface Store
     /**
      * Store an item in the cache indefinitely.
      *
-     * @param  string  $key
-     * @param  mixed   $value
-     * @return void
+     * @param string $key
+     * @param mixed  $value
      */
     public function forever($key, $value);
 
     /**
      * Remove an item from the cache.
      *
-     * @param  string  $key
+     * @param string $key
+     *
      * @return bool
      */
     public function forget($key);
 
     /**
      * Remove all items from the cache.
-     *
-     * @return void
      */
     public function flush();
 

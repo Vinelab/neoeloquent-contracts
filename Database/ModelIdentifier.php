@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Database;
+namespace Vinelab\NeoEloquent\Contracts\Database;
 
 class ModelIdentifier
 {
@@ -21,9 +21,8 @@ class ModelIdentifier
     /**
      * Create a new model identifier.
      *
-     * @param  string  $class
-     * @param  mixed  $id
-     * @return void
+     * @param string $class
+     * @param mixed  $id
      */
     public function __construct($class, $id)
     {

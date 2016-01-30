@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Contracts\Foundation;
+namespace Vinelab\NeoEloquent\Contracts\Foundation;
 
-use Illuminate\Contracts\Container\Container;
+use Vinelab\NeoEloquent\Contracts\Container\Container;
 
 interface Application extends Container
 {
@@ -24,6 +24,7 @@ interface Application extends Container
      * Get or check the current application environment.
      *
      * @param  mixed
+     *
      * @return string
      */
     public function environment();
@@ -37,64 +38,44 @@ interface Application extends Container
 
     /**
      * Register all of the configured providers.
-     *
-     * @return void
      */
     public function registerConfiguredProviders();
 
     /**
      * Register a service provider with the application.
      *
-     * @param  \Illuminate\Support\ServiceProvider|string  $provider
-     * @param  array  $options
-     * @param  bool   $force
+     * @param \Illuminate\Support\ServiceProvider|string $provider
+     * @param array                                      $options
+     * @param bool                                       $force
+     *
      * @return \Illuminate\Support\ServiceProvider
      */
-    public function register($provider, $options = [], $force = false);
+    public function register($provider, $options = array(), $force = false);
 
     /**
      * Register a deferred provider and service.
      *
-     * @param  string  $provider
-     * @param  string  $service
-     * @return void
+     * @param string $provider
+     * @param string $service
      */
     public function registerDeferredProvider($provider, $service = null);
 
     /**
      * Boot the application's service providers.
-     *
-     * @return void
      */
     public function boot();
 
     /**
      * Register a new boot listener.
      *
-     * @param  mixed  $callback
-     * @return void
+     * @param mixed $callback
      */
     public function booting($callback);
 
     /**
      * Register a new "booted" listener.
      *
-     * @param  mixed  $callback
-     * @return void
+     * @param mixed $callback
      */
     public function booted($callback);
-
-    /**
-     * Get the path to the cached "compiled.php" file.
-     *
-     * @return string
-     */
-    public function getCachedCompilePath();
-
-    /**
-     * Get the path to the cached services.json file.
-     *
-     * @return string
-     */
-    public function getCachedServicesPath();
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Bus;
+namespace Vinelab\NeoEloquent\Contracts\Bus;
 
 use Closure;
 use ArrayAccess;
@@ -10,8 +10,9 @@ interface Dispatcher
     /**
      * Marshal a command and dispatch it to its appropriate handler.
      *
-     * @param  mixed  $command
-     * @param  array  $array
+     * @param mixed $command
+     * @param array $array
+     *
      * @return mixed
      */
     public function dispatchFromArray($command, array $array);
@@ -19,9 +20,10 @@ interface Dispatcher
     /**
      * Marshal a command and dispatch it to its appropriate handler.
      *
-     * @param  mixed  $command
-     * @param  \ArrayAccess  $source
-     * @param  array  $extras
+     * @param mixed        $command
+     * @param \ArrayAccess $source
+     * @param array        $extras
+     *
      * @return mixed
      */
     public function dispatchFrom($command, ArrayAccess $source, array $extras = []);
@@ -29,8 +31,9 @@ interface Dispatcher
     /**
      * Dispatch a command to its appropriate handler.
      *
-     * @param  mixed  $command
-     * @param  \Closure|null  $afterResolving
+     * @param mixed         $command
+     * @param \Closure|null $afterResolving
+     *
      * @return mixed
      */
     public function dispatch($command, Closure $afterResolving = null);
@@ -38,8 +41,9 @@ interface Dispatcher
     /**
      * Dispatch a command to its appropriate handler in the current process.
      *
-     * @param  mixed  $command
-     * @param  \Closure|null  $afterResolving
+     * @param mixed         $command
+     * @param \Closure|null $afterResolving
+     *
      * @return mixed
      */
     public function dispatchNow($command, Closure $afterResolving = null);
@@ -47,7 +51,8 @@ interface Dispatcher
     /**
      * Set the pipes commands should be piped through before dispatching.
      *
-     * @param  array  $pipes
+     * @param array $pipes
+     *
      * @return $this
      */
     public function pipeThrough(array $pipes);

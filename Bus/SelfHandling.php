@@ -1,8 +1,7 @@
 <?php
 
-namespace Illuminate\Contracts\Bus;
+namespace Vinelab\NeoEloquent\Contracts\Bus;
 
 interface SelfHandling
 {
-    //
 }

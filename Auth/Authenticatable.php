@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Auth;
+namespace Vinelab\NeoEloquent\Contracts\Auth;
 
 interface Authenticatable
 {
@@ -28,8 +28,7 @@ interface Authenticatable
     /**
      * Set the token value for the "remember me" session.
      *
-     * @param  string  $value
-     * @return void
+     * @param string $value
      */
     public function setRememberToken($value);
 

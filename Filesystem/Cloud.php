@@ -1,8 +1,7 @@
 <?php
 
-namespace Illuminate\Contracts\Filesystem;
+namespace Vinelab\NeoEloquent\Contracts\Filesystem;
 
 interface Cloud extends Filesystem
 {
-    //
 }
