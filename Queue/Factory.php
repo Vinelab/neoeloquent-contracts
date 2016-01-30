@@ -1,13 +1,15 @@
-<?php namespace Illuminate\Contracts\Queue;
+<?php
 
-interface Factory {
+namespace Vinelab\NeoEloquent\Contracts\Queue;
 
-	/**
-	 * Resolve a queue connection instance.
-	 *
-	 * @param  string  $name
-	 * @return \Illuminate\Contracts\Queue\Queue
-	 */
-	public function connection($name = null);
-
+interface Factory
+{
+    /**
+     * Resolve a queue connection instance.
+     *
+     * @param string $name
+     *
+     * @return \Illuminate\Contracts\Queue\Queue
+     */
+    public function connection($name = null);
 }

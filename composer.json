@@ -1,16 +1,20 @@
 {
-    "name": "illuminate/contracts",
-    "description": "The Illuminate Contracts package.",
+    "name": "vinelab/neoeloquent-contracts",
+    "description": "Fork of the Illuminate Contracts package to be used with Vinelab/NeoEloquent.",
     "license": "MIT",
-    "homepage": "http://laravel.com",
+    "homepage": "https://github.com/vinelab/NeoEloquent",
     "support": {
-        "issues": "https://github.com/laravel/framework/issues",
-        "source": "https://github.com/laravel/framework"
+        "issues": "https://github.com/vinelab/NeoEloquent/issues",
+        "source": "https://github.com/vinelab/NeoEloquent"
     },
     "authors": [
         {
             "name": "Taylor Otwell",
             "email": "taylorotwell@gmail.com"
+        },
+        {
+            "name": "Abed Halawi",
+            "email": "abed.halawi@vinelab.com"
         }
     ],
     "require": {
@@ -18,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Illuminate\\Contracts\\": ""
+            "Vinelab\\NeoEloquent\\Contracts\\": ""
         }
     },
     "extra": {

@@ -1,12 +1,11 @@
-<?php namespace Illuminate\Contracts\Validation;
+<?php
 
-interface ValidatesWhenResolved {
+namespace Vinelab\NeoEloquent\Contracts\Validation;
 
-	/**
-	 * Validate the given class instance.
-	 *
-	 * @return void
-	 */
-	public function validate();
-
+interface ValidatesWhenResolved
+{
+    /**
+     * Validate the given class instance.
+     */
+    public function validate();
 }

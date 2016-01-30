@@ -1,23 +1,25 @@
-<?php namespace Illuminate\Contracts\View;
+<?php
 
-use Illuminate\Contracts\Support\Renderable;
+namespace Vinelab\NeoEloquent\Contracts\View;
 
-interface View extends Renderable {
+use Vinelab\NeoEloquent\Contracts\Support\Renderable;
 
-	/**
-	 * Get the name of the view.
-	 *
-	 * @return string
-	 */
-	public function name();
+interface View extends Renderable
+{
+    /**
+     * Get the name of the view.
+     *
+     * @return string
+     */
+    public function name();
 
-	/**
-	 * Add a piece of data to the view.
-	 *
-	 * @param  string|array  $key
-	 * @param  mixed   $value
-	 * @return $this
-	 */
-	public function with($key, $value = null);
-
+    /**
+     * Add a piece of data to the view.
+     *
+     * @param string|array $key
+     * @param mixed        $value
+     *
+     * @return $this
+     */
+    public function with($key, $value = null);
 }
