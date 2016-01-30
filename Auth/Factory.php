@@ -1,13 +1,14 @@
 <?php
 
-namespace Illuminate\Contracts\Auth;
+namespace Vinelab\NeoEloquent\Contracts\Auth;
 
 interface Factory
 {
     /**
      * Get a guard instance by name.
      *
-     * @param  string|null  $name
+     * @param string|null $name
+     *
      * @return mixed
      */
     public function guard($name = null);
@@ -15,8 +16,7 @@ interface Factory
     /**
      * Set the default guard the factory should serve.
      *
-     * @param  string  $name
-     * @return void
+     * @param string $name
      */
     public function shouldUse($name);
 }

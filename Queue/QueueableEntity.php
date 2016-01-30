@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Queue;
+namespace Vinelab\NeoEloquent\Contracts\Queue;
 
 interface QueueableEntity
 {

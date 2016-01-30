@@ -1,14 +1,13 @@
 <?php
 
-namespace Illuminate\Contracts\Broadcasting;
+namespace Vinelab\NeoEloquent\Contracts\Broadcasting;
 
 interface Factory
 {
     /**
      * Get a broadcaster implementation by name.
      *
-     * @param  string  $name
-     * @return void
+     * @param string $name
      */
     public function connection($name = null);
 }

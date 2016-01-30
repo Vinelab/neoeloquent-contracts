@@ -1,15 +1,16 @@
 <?php
 
-namespace Illuminate\Contracts\Auth;
+namespace Vinelab\NeoEloquent\Contracts\Auth;
 
 interface StatefulGuard extends Guard
 {
     /**
      * Attempt to authenticate a user using the given credentials.
      *
-     * @param  array  $credentials
-     * @param  bool   $remember
-     * @param  bool   $login
+     * @param array $credentials
+     * @param bool  $remember
+     * @param bool  $login
+     *
      * @return bool
      */
     public function attempt(array $credentials = [], $remember = false, $login = true);
@@ -17,7 +18,8 @@ interface StatefulGuard extends Guard
     /**
      * Log a user into the application without sessions or cookies.
      *
-     * @param  array  $credentials
+     * @param array $credentials
+     *
      * @return bool
      */
     public function once(array $credentials = []);
@@ -25,17 +27,17 @@ interface StatefulGuard extends Guard
     /**
      * Log a user into the application.
      *
-     * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
-     * @param  bool  $remember
-     * @return void
+     * @param \Illuminate\Contracts\Auth\Authenticatable $user
+     * @param bool                                       $remember
      */
     public function login(Authenticatable $user, $remember = false);
 
     /**
      * Log the given user ID into the application.
      *
-     * @param  mixed  $id
-     * @param  bool   $remember
+     * @param mixed $id
+     * @param bool  $remember
+     *
      * @return \Illuminate\Contracts\Auth\Authenticatable
      */
     public function loginUsingId($id, $remember = false);
@@ -43,7 +45,8 @@ interface StatefulGuard extends Guard
     /**
      * Log the given user ID into the application without sessions or cookies.
      *
-     * @param  mixed  $id
+     * @param mixed $id
+     *
      * @return bool
      */
     public function onceUsingId($id);
@@ -57,8 +60,6 @@ interface StatefulGuard extends Guard
 
     /**
      * Log the user out of the application.
-     *
-     * @return void
      */
     public function logout();
 }

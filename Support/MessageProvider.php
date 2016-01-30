@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Support;
+namespace Vinelab\NeoEloquent\Contracts\Support;
 
 interface MessageProvider
 {

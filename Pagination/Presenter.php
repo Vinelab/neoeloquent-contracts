@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Pagination;
+namespace Vinelab\NeoEloquent\Contracts\Pagination;
 
 interface Presenter
 {

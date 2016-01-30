@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Routing;
+namespace Vinelab\NeoEloquent\Contracts\Routing;
 
 interface UrlRoutable
 {

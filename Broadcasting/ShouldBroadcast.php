@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Broadcasting;
+namespace Vinelab\NeoEloquent\Contracts\Broadcasting;
 
 interface ShouldBroadcast
 {

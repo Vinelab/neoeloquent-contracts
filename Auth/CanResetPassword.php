@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Auth;
+namespace Vinelab\NeoEloquent\Contracts\Auth;
 
 interface CanResetPassword
 {

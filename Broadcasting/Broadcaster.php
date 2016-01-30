@@ -1,16 +1,15 @@
 <?php
 
-namespace Illuminate\Contracts\Broadcasting;
+namespace Vinelab\NeoEloquent\Contracts\Broadcasting;
 
 interface Broadcaster
 {
     /**
      * Broadcast the given event.
      *
-     * @param  array  $channels
-     * @param  string  $event
-     * @param  array  $payload
-     * @return void
+     * @param array  $channels
+     * @param string $event
+     * @param array  $payload
      */
     public function broadcast(array $channels, $event, array $payload = []);
 }
