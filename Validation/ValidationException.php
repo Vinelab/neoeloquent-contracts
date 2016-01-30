@@ -1,9 +1,9 @@
 <?php
 
-namespace Illuminate\Contracts\Validation;
+namespace Vinelab\NeoEloquent\Contracts\Validation;
 
 use RuntimeException;
-use Illuminate\Contracts\Support\MessageProvider;
+use Vinelab\NeoEloquent\Contracts\Support\MessageProvider;
 
 class ValidationException extends RuntimeException
 {
@@ -17,8 +17,7 @@ class ValidationException extends RuntimeException
     /**
      * Create a new validation exception instance.
      *
-     * @param  \Illuminate\Contracts\Support\MessageProvider  $provider
-     * @return void
+     * @param \Illuminate\Contracts\Support\MessageProvider $provider
      */
     public function __construct(MessageProvider $provider)
     {

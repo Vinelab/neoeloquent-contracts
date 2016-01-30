@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Container;
+namespace Vinelab\NeoEloquent\Contracts\Container;
 
 use Exception;
 

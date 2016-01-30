@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Contracts\Encryption;
+namespace Vinelab\NeoEloquent\Contracts\Encryption;
 
 use RuntimeException;
 
